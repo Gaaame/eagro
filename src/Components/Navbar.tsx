@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 
 const navOptions = [
-  { label: "Our program", href: "#program" },
-  { label: "Loan", href: "#loan" },
-  { label: "Research", href: "#research" },
-  { label: "Useful government links", href: "#links" },
+  { label: "Our program", path: "/program" },
+  { label: "Loan", path: "/loan" },
+  { label: "Research", path: "/research" },
+  { label: "Useful government links", path: "/links" },
 ];
 
 function Navbar() {
@@ -24,28 +24,21 @@ function Navbar() {
           {/* Navigation */}
           <nav className="hidden items-center gap-7 md:flex">
             {navOptions.map((option) => (
-              <a
+              <Link
                 key={option.label}
-                href={option.href}
-                className="text-xs text-white/55 transition hover:text-white"
+                to={option.path}
+                className="text-sm text-white/55 transition hover:text-white"
               >
                 {option.label}
-              </a>
+              </Link>
             ))}
           </nav>
 
           {/* Actions */}
           <div className="hidden items-center gap-3 sm:flex">
-            <button className="rounded-full border border-white/10 px-4 py-2 text-xs text-white/70 transition hover:border-white/20 hover:text-white">
+            {/* <button className="rounded-full border border-white/10 px-4 py-2 text-xs text-white/70 transition hover:border-white/20 hover:text-white">
               Tagalog
-            </button>
-
-            {/* <a
-              href="#loan"
-              className="rounded-full bg-[#F5B900] px-5 py-2.5 text-xs font-bold text-[#07150D] transition hover:bg-[#FFC928]"
-            >
-              Apply for a loan
-            </a> */}
+            </button> */}
 
             <Link
               to="/contact"
