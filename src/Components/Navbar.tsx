@@ -32,13 +32,6 @@ function Navbar() {
                 {option.label}
               </a>
             ))}
-
-            <Link
-              to="/contact"
-              className="text-xs text-white/55 transition hover:text-white"
-            >
-              Contact us
-            </Link>
           </nav>
 
           {/* Actions */}
@@ -47,12 +40,19 @@ function Navbar() {
               Tagalog
             </button>
 
-            <a
+            {/* <a
               href="#loan"
               className="rounded-full bg-[#F5B900] px-5 py-2.5 text-xs font-bold text-[#07150D] transition hover:bg-[#FFC928]"
             >
               Apply for a loan
-            </a>
+            </a> */}
+
+            <Link
+              to="/contact"
+              className="rounded-full bg-[#F5B900] px-5 py-2.5 text-xs font-bold text-[#07150D] transition hover:bg-[#FFC928]"
+            >
+              Apply for a loan
+            </Link>
           </div>
 
           {/* Mobile button */}
