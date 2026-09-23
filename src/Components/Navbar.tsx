@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Navbar() {
   return (
     <div className=" bg-white text-slate-800">
@@ -47,12 +49,12 @@ function Navbar() {
               Useful government links
             </a>
 
-            <a
-              href="#contact"
+            <Link
+              to="/contact"
               className="text-xs text-white/55 transition hover:text-white"
             >
               Contact us
-            </a>
+            </Link>
           </nav>
 
           {/* Actions */}
