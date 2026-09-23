@@ -1,53 +1,37 @@
 import { Link } from "react-router-dom";
 
+const navOptions = [
+  { label: "Our program", href: "#program" },
+  { label: "Loan", href: "#loan" },
+  { label: "Research", href: "#research" },
+  { label: "Useful government links", href: "#links" },
+];
+
 function Navbar() {
   return (
-    <div className=" bg-white text-slate-800">
-      {/* Navbar */}
+    <div className="bg-white text-slate-800">
       <header className="border-b border-white/5 bg-[#061810]">
         <div className="mx-auto flex h-20 max-w-6xl items-center justify-between px-6">
           {/* Logo */}
-          <a
-            href="#home"
+          <Link
+            to="/"
             className="flex items-center gap-2 text-lg font-bold text-white"
           >
             <span className="text-[#8BCF63]">✦</span>
             E-Agro
-          </a>
+          </Link>
 
           {/* Navigation */}
           <nav className="hidden items-center gap-7 md:flex">
-            <a href="#home" className="text-xs font-medium text-white">
-              Home
-            </a>
-
-            <a
-              href="#program"
-              className="text-xs text-white/55 transition hover:text-white"
-            >
-              Our program
-            </a>
-
-            <a
-              href="#loan"
-              className="text-xs text-white/55 transition hover:text-white"
-            >
-              Loan
-            </a>
-
-            <a
-              href="#research"
-              className="text-xs text-white/55 transition hover:text-white"
-            >
-              Research
-            </a>
-
-            <a
-              href="#links"
-              className="text-xs text-white/55 transition hover:text-white"
-            >
-              Useful government links
-            </a>
+            {navOptions.map((option) => (
+              <a
+                key={option.label}
+                href={option.href}
+                className="text-xs text-white/55 transition hover:text-white"
+              >
+                {option.label}
+              </a>
+            ))}
 
             <Link
               to="/contact"
@@ -93,4 +77,5 @@ function Navbar() {
     </div>
   );
 }
+
 export default Navbar;
