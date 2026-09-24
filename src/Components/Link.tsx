@@ -2,58 +2,58 @@ import { Link } from "react-router-dom";
 
 const governmentLinks = [
   {
-    logo: "/images/ati.png",
+    logo: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.marriageandbeyond.com%2Fwp-content%2Fuploads%2F2019%2F06%2Fati.jpg&f=1&nofb=1&ipt=3f2174b3d1d9bba1b4c1fd308740a7a9b569d006c568f3c3306d9c843f86dd94",
     title: "Agricultural Training Institute",
     description:
       "For programs and training to promote the development of rural areas.",
-    url: "#",
+    url: "https://ati2.da.gov.ph/ati-main/content/",
   },
   {
-    logo: "/images/bafs.png",
+    logo: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flookaside.fbsbx.com%2Flookaside%2Fcrawler%2Fmedia%2F%3Fmedia_id%3D229107139260744&f=1&nofb=1&ipt=82ff63c0b272dfc8ca80d71b0e3f7c8b964803059dadadb917dc33d84e2f3a98",
     title: "Bureau of Agriculture and Fisheries Standards",
     description:
       "For quality standards regarding agricultural and fishery products, structure, and machinery.",
-    url: "#",
+    url: "https://bafs.da.gov.ph/",
   },
   {
-    logo: "/images/da-ilocos.png",
+    logo: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flookaside.fbsbx.com%2Flookaside%2Fcrawler%2Fmedia%2F%3Fmedia_id%3D100069353553423&f=1&nofb=1&ipt=a4dab160193da9a1e73f1e6ce13b2be309ddfb91179070d420113623ecdeb2a5",
     title: "Department of Agriculture - Ilocos",
     description: "For economic development through agriculture from Region 1.",
-    url: "#",
+    url: "https://ilocos.da.gov.ph/",
   },
   {
-    logo: "/images/dost.png",
+    logo: "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.panaynews.net%2Fwp-content%2Fuploads%2F2019%2F05%2FDepartment-of-Science-and-Technology.png&f=1&nofb=1&ipt=7c70d46f862eceb21e4569970a634406f0b03c60052e6eb95fb4b4885a9bca5e",
     title: "Department of Science and Technology",
     description:
       "Get information on the latest technology and techniques within Region 1.",
-    url: "#",
+    url: "https://www.dost.gov.ph/",
   },
   {
-    logo: "/images/pcaf.png",
+    logo: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%2Fid%2FOIP.p7Sd-hO4z7QmMMXa5HHLVwHaHa%3Fr%3D0%26pid%3DApi&f=1&ipt=c0f7f53e5fc3e758fe48586a14cb7684d85f80c03715a834260429deb090fb17",
     title: "Philippine Council for Agriculture and Fisheries",
     description:
       "For participatory processes in the sector of agriculture and fisheries.",
     url: "#",
   },
   {
-    logo: "/images/tesda.png",
+    logo: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftesdaonlineprogram.com%2Fwp-content%2Fuploads%2F2023%2F08%2FTESDA-LOGO-1.jpg&f=1&nofb=1&ipt=0caaf1d6782139e1ed11a0b2d362555395499f43bf150ff5d9167ad1ec9027b2",
     title: "Technical Education and Skills Development Authority",
     description:
       "Read more about technical and skills development programs in the Philippines.",
-    url: "#",
+    url: "https://www.tesda.gov.ph/",
   },
   {
-    logo: "/images/acpc.png",
+    logo: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F5.imimg.com%2Fdata5%2FSELLER%2FDefault%2F2022%2F9%2FKZ%2FPY%2FSU%2F154377177%2Fagricultural-credit-policy-council-tender-information-500x500.jpg&f=1&nofb=1&ipt=119434a2cab12bb9569b0a40d3eaf620d5159547ffeb3687b0bab4830714cac8",
     title: "Agricultural Credit Policy Council",
     description:
       "Find out the agricultural credit policies that are being implemented.",
-    url: "#",
+    url: "https://acpc.gov.ph/",
   },
   {
-    logo: "/images/bar.png",
+    logo: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fformsphilippines.com%2Fagencylogo%2F59.png&f=1&nofb=1&ipt=5c0a688ae0b3b9beadb5fb952a130c0f929bd63aa4ab7ec5d184ca6111c646ad",
     title: "Bureau of Agricultural Research",
     description: "Find out the new research available in the farming sector.",
-    url: "#",
+    url: "https://www.bar.gov.ph/",
   },
 ];
 

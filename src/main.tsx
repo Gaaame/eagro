@@ -6,12 +6,12 @@ import "./index.css";
 
 // Components
 import App from "./Components/App.tsx";
+import About from "./Components/About.tsx";
 import Navbar from "./Components/Navbar.tsx";
 import Services from "./Components/Services.tsx";
 import Participation from "./Components/Participation.tsx";
 import Footer from "./Components/Footer.tsx";
 import Contact from "./Components/Contact.tsx";
-import Loan from "./Components/Loan.tsx";
 import Link from "./Components/Link.tsx";
 import Program from "./Components/Program.tsx";
 
@@ -34,8 +34,8 @@ createRoot(document.getElementById("root")!).render(
             }
           />
 
-          {/* Loan */}
-          <Route path="/loan" element={<Loan />} />
+          {/* About */}
+          <Route path="/about" element={<About />} />
 
           {/* Program */}
           <Route path="/program" element={<Program />} />
