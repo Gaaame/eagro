@@ -154,6 +154,15 @@ body {
    Used AFTER entrance animation
 ======================================== */
 
+@keyframes loading {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+
 @keyframes float {
   0%,
   100% {

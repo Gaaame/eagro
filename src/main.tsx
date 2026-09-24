@@ -16,10 +16,12 @@ import Link from "./Components/Link.tsx";
 import Program from "./Components/Program.tsx";
 import Farmer from "./Components/Farmer.tsx";
 import Supplier from "./Components/Supplier.tsx";
+import LoadingIntro from "./Components/LoadingIntro.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <BrowserRouter>
+      <LoadingIntro />
       <Navbar />
 
       <Routes>
