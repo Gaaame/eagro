@@ -11,7 +11,8 @@ import Services from "./Components/Services.tsx";
 import Participation from "./Components/Participation.tsx";
 import Footer from "./Components/Footer.tsx";
 import Contact from "./Components/Contact.tsx";
-// import accountRegister from "./Components/accountRegister.tsx";
+import Loan from "./Components/Loan.tsx";
+import Link from "./Components/Link.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -32,6 +33,11 @@ createRoot(document.getElementById("root")!).render(
             }
           />
 
+          {/* Loan */}
+          <Route path="/loan" element={<Loan />} />
+
+          {/* Government Links */}
+          <Route path="/links" element={<Link />} />
           {/* Contact */}
           <Route path="/contact" element={<Contact />} />
         </Route>

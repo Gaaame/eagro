@@ -4,7 +4,7 @@ const navOptions = [
   { label: "Our program", path: "/program" },
   { label: "Loan", path: "/loan" },
   { label: "Research", path: "/research" },
-  { label: "Useful government links", path: "/links" },
+  { label: "Government links", path: "/links" },
 ];
 
 function Navbar() {
