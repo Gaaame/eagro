@@ -14,6 +14,7 @@ import Footer from "./Components/Footer.tsx";
 import Contact from "./Components/Contact.tsx";
 import Link from "./Components/Link.tsx";
 import Program from "./Components/Program.tsx";
+import Farmer from "./Components/Farmer.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -45,6 +46,9 @@ createRoot(document.getElementById("root")!).render(
 
           {/* Contact */}
           <Route path="/contact" element={<Contact />} />
+
+          {/* Farmer */}
+          <Route path="/farmer" element={<Farmer />} />
         </Route>
       </Routes>
       <Footer />

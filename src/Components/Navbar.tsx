@@ -4,6 +4,7 @@ const navOptions = [
   { label: "Our program", path: "/program" },
   { label: "About Us", path: "/about" },
   { label: "Government links", path: "/links" },
+  { label: "For Farmers", path: "/farmer" },
 ];
 
 function Navbar() {
