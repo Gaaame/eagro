@@ -1,1 +1,226 @@
 @import "tailwindcss";
+
+html {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+/* ========================================
+   ENTRANCE ANIMATIONS
+======================================== */
+
+@keyframes entranceLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes entranceRight {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes entranceUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes entranceScale {
+  from {
+    opacity: 0;
+    transform: scale(0.92);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes entranceRotate {
+  from {
+    opacity: 0;
+    transform: rotate(-8deg) scale(0.9);
+  }
+
+  to {
+    opacity: 1;
+    transform: rotate(0) scale(1);
+  }
+}
+
+/* ========================================
+   ENTRANCE CLASSES
+======================================== */
+
+.animate-entrance-left {
+  animation: entranceLeft 0.8s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.animate-entrance-right {
+  animation: entranceRight 0.9s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.animate-entrance-up {
+  animation: entranceUp 0.8s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.animate-entrance-scale {
+  animation: entranceScale 0.8s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.animate-entrance-rotate {
+  animation: entranceRotate 0.8s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+/* ========================================
+   ENTRANCE DELAYS
+======================================== */
+
+.entrance-delay-100 {
+  animation-delay: 100ms;
+}
+
+.entrance-delay-200 {
+  animation-delay: 200ms;
+}
+
+.entrance-delay-300 {
+  animation-delay: 300ms;
+}
+
+.entrance-delay-400 {
+  animation-delay: 400ms;
+}
+
+.entrance-delay-500 {
+  animation-delay: 500ms;
+}
+
+.entrance-delay-600 {
+  animation-delay: 600ms;
+}
+
+.entrance-delay-700 {
+  animation-delay: 700ms;
+}
+
+.entrance-delay-800 {
+  animation-delay: 800ms;
+}
+
+.entrance-delay-900 {
+  animation-delay: 900ms;
+}
+
+.entrance-delay-1000 {
+  animation-delay: 1000ms;
+}
+
+/* ========================================
+   FLOATING ANIMATION
+   Used AFTER entrance animation
+======================================== */
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+/* ========================================
+   ACCESSIBILITY
+======================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-delay: 0ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.entrance-delay-600 {
+  animation-delay: 600ms;
+}
+
+.entrance-delay-700 {
+  animation-delay: 700ms;
+}
+
+.entrance-delay-800 {
+  animation-delay: 800ms;
+}
+
+.entrance-delay-900 {
+  animation-delay: 900ms;
+}
+
+.entrance-delay-1000 {
+  animation-delay: 1000ms;
+}
+
+.entrance-delay-600 {
+  animation-delay: 600ms;
+}
+
+.entrance-delay-700 {
+  animation-delay: 700ms;
+}
+
+.entrance-delay-800 {
+  animation-delay: 800ms;
+}
+
+.entrance-delay-900 {
+  animation-delay: 900ms;
+}
+
+.entrance-delay-1000 {
+  animation-delay: 1000ms;
+}

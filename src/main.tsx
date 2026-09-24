@@ -13,6 +13,7 @@ import Footer from "./Components/Footer.tsx";
 import Contact from "./Components/Contact.tsx";
 import Loan from "./Components/Loan.tsx";
 import Link from "./Components/Link.tsx";
+import Program from "./Components/Program.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -36,8 +37,12 @@ createRoot(document.getElementById("root")!).render(
           {/* Loan */}
           <Route path="/loan" element={<Loan />} />
 
-          {/* Government Links */}
+          {/* Program */}
+          <Route path="/program" element={<Program />} />
+
+          {/* Gov Links */}
           <Route path="/links" element={<Link />} />
+
           {/* Contact */}
           <Route path="/contact" element={<Contact />} />
         </Route>

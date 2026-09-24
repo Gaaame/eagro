@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 
 const navOptions = [
   { label: "Our program", path: "/program" },
-  { label: "Loan", path: "/loan" },
   { label: "Research", path: "/research" },
   { label: "Government links", path: "/links" },
 ];

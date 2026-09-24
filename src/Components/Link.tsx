@@ -1,91 +1,71 @@
 import { Link } from "react-router-dom";
 
-const programs = [
+const governmentLinks = [
   {
-    icon: "💰",
-    title: "Loans with Low Interest Rates",
-    description: [
-      "Low interest (1.5% interest per month)",
-      "Borrow per product up to the following amounts:",
-    ],
-    details: [
-      "LABOR:",
-      "Rice - up to PHP 42,000 per hectare",
-      "Corn - up to PHP 16,800 per hectare",
-      "Onion - up to PHP 80,000 per hectare",
-      "With collateral/safekeep",
-      "Harvest may be used to pay the loan",
-      "Fast processing",
-      "No hidden fees",
-    ],
+    logo: "/images/ati.png",
+    title: "Agricultural Training Institute",
+    description:
+      "For programs and training to promote the development of rural areas.",
+    url: "#",
   },
   {
-    icon: "🛠️",
-    title: "Low Prices of Supplies and Tools",
-    description: [
-      "Buy tools and supplies at low prices online.",
-      "Receive purchases at the nearest warehouse.",
-    ],
+    logo: "/images/bafs.png",
+    title: "Bureau of Agriculture and Fisheries Standards",
+    description:
+      "For quality standards regarding agricultural and fishery products, structure, and machinery.",
+    url: "#",
   },
   {
-    icon: "📈",
-    title: "Fair Market Prices",
-    description: [
-      "Sell your produce at the best prices",
-      "Know the latest market prices",
-    ],
+    logo: "/images/da-ilocos.png",
+    title: "Department of Agriculture - Ilocos",
+    description: "For economic development through agriculture from Region 1.",
+    url: "#",
   },
   {
-    icon: "🏭",
-    title: "Post-Harvest Facilities",
-    description: [
-      "Places to sell your produce",
-      "Warehouses to receive supplies and tools.",
-      "Multi-Purpose Drying Pavement (MPDP)",
-      "Milling Production Facility",
-    ],
+    logo: "/images/dost.png",
+    title: "Department of Science and Technology",
+    description:
+      "Get information on the latest technology and techniques within Region 1.",
+    url: "#",
   },
   {
-    icon: "🚜",
-    title: "Mechanized Farming",
-    description: [
-      "Reduce labor cost",
-      "Increase productivity with less effort",
-      "Easy access to renting available machinery",
-    ],
+    logo: "/images/pcaf.png",
+    title: "Philippine Council for Agriculture and Fisheries",
+    description:
+      "For participatory processes in the sector of agriculture and fisheries.",
+    url: "#",
   },
   {
-    icon: "🛡️",
-    title: "Crop Insurance",
-    description: [
-      "Automatic insurance to protect your crops from losses due to natural disasters and more.",
-    ],
+    logo: "/images/tesda.png",
+    title: "Technical Education and Skills Development Authority",
+    description:
+      "Read more about technical and skills development programs in the Philippines.",
+    url: "#",
   },
   {
-    icon: "📚",
-    title: "Modern Farming Knowledge",
-    description: [
-      "Continuous research and dissemination of information by the Municipal Agriculture of LGU of Bayambang.",
-      "GEOGRAPHICAL INFORMATION SYSTEM (GIS) and SOIL ANALYSIS pinpoints every location in Bayambang, soil type, and top harvested crops.",
-    ],
+    logo: "/images/acpc.png",
+    title: "Agricultural Credit Policy Council",
+    description:
+      "Find out the agricultural credit policies that are being implemented.",
+    url: "#",
   },
   {
-    icon: "🏥",
-    title: "Life Insurance",
-    description: [
-      "The farmer's life is guaranteed.",
-      "A program that provides financial assistance, called a Death Benefit, to the designated beneficiaries in the event of the insured person's death.",
-    ],
+    logo: "/images/bar.png",
+    title: "Bureau of Agricultural Research",
+    description: "Find out the new research available in the farming sector.",
+    url: "#",
   },
 ];
 
-function Program() {
+function GovLinks() {
   return (
     <main className="min-h-screen overflow-hidden bg-[#071A11] font-sans text-[#F1F5EE]">
       {/* Background */}
       <div className="pointer-events-none fixed inset-0 -z-10 overflow-hidden">
         <div className="absolute -left-40 top-20 h-96 w-96 rounded-full bg-[#00A94F]/10 blur-3xl" />
-        <div className="absolute right-[-10rem] top-[30%] h-[30rem] w-[30rem] rounded-full bg-[#8BCF63]/10 blur-3xl" />
+
+        <div className="absolute right-[-10rem] top-[25%] h-[30rem] w-[30rem] rounded-full bg-[#8BCF63]/10 blur-3xl" />
+
         <div className="absolute bottom-[-12rem] left-[35%] h-[28rem] w-[28rem] rounded-full bg-[#00A94F]/10 blur-3xl" />
 
         <div
@@ -102,124 +82,122 @@ function Program() {
       <section className="relative px-6 pb-16 pt-28 sm:px-8 lg:px-12 lg:pb-20 lg:pt-36">
         <div className="mx-auto max-w-7xl">
           <div className="mx-auto max-w-4xl text-center">
+            {/* Eyebrow */}
             <div className="animate-fade-up mb-5 inline-flex items-center gap-2 rounded-full border border-[#8BCF63]/20 bg-[#8BCF63]/10 px-4 py-2 text-sm font-medium text-[#A9DB8A]">
               <span className="h-2 w-2 animate-pulse rounded-full bg-[#8BCF63]" />
-              Supporting Filipino Farmers
+              Government Resources
             </div>
 
+            {/* Heading */}
             <h1 className="animate-fade-up animation-delay-100 text-5xl font-black tracking-tight text-white sm:text-6xl lg:text-7xl">
-              Our{" "}
+              Useful{" "}
               <span className="bg-gradient-to-r from-[#35B85F] via-[#8BCF63] to-[#B5E890] bg-clip-text text-transparent">
-                Program
+                Government Links
               </span>
             </h1>
 
             <p className="animate-fade-up animation-delay-200 mx-auto mt-6 max-w-2xl text-base leading-7 text-white/60 sm:text-lg">
-              E-Agro provides farmers with access to financing, affordable
-              agricultural resources, market opportunities, technology, and
-              knowledge designed to support sustainable growth.
+              Connect with government agencies and organizations that provide
+              agricultural programs, services, research, training, technology,
+              and financial resources.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Program Cards */}
+      {/* Government Links */}
       <section className="px-6 pb-24 sm:px-8 lg:px-12 lg:pb-32">
         <div className="mx-auto max-w-7xl">
           <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-            {programs.map((program, index) => (
-              <article
-                key={program.title}
-                className="animate-fade-up group relative overflow-hidden rounded-3xl border border-white/[0.08] bg-white/[0.035] p-6 backdrop-blur-sm transition-all duration-500 hover:-translate-y-2 hover:border-[#8BCF63]/30 hover:bg-white/[0.06] hover:shadow-[0_20px_60px_rgba(0,169,79,0.12)]"
+            {governmentLinks.map((item, index) => (
+              <a
+                key={item.title}
+                href={item.url}
+                target={item.url !== "#" ? "_blank" : undefined}
+                rel={item.url !== "#" ? "noopener noreferrer" : undefined}
+                className="animate-fade-up group relative flex min-h-[330px] flex-col overflow-hidden rounded-3xl border border-white/[0.08] bg-white/[0.035] p-7 backdrop-blur-sm transition-all duration-500 hover:-translate-y-2 hover:border-[#8BCF63]/30 hover:bg-white/[0.06] hover:shadow-[0_25px_70px_rgba(0,169,79,0.12)]"
                 style={{
                   animationDelay: `${index * 80}ms`,
                 }}
               >
-                {/* Card glow */}
-                <div className="absolute -right-12 -top-12 h-32 w-32 rounded-full bg-[#8BCF63]/10 opacity-0 blur-3xl transition-opacity duration-500 group-hover:opacity-100" />
+                {/* Glow */}
+                <div className="absolute -right-16 -top-16 h-40 w-40 rounded-full bg-[#8BCF63]/10 opacity-0 blur-3xl transition-opacity duration-500 group-hover:opacity-100" />
 
                 {/* Number */}
-                <div className="absolute right-5 top-5 text-xs font-semibold tracking-widest text-white/20">
+                <span className="absolute right-6 top-6 text-xs font-semibold tracking-[0.2em] text-white/20">
                   {String(index + 1).padStart(2, "0")}
-                </div>
+                </span>
 
-                {/* Icon */}
-                <div className="relative mb-6 flex h-14 w-14 items-center justify-center rounded-2xl border border-[#8BCF63]/20 bg-[#8BCF63]/10 text-2xl transition-transform duration-500 group-hover:scale-110 group-hover:rotate-3">
-                  {program.icon}
-                </div>
+                {/* Logo */}
+                <div className="relative flex h-28 items-center justify-center">
+                  <div className="absolute h-24 w-24 rounded-full bg-[#8BCF63]/5 blur-2xl transition-all duration-500 group-hover:bg-[#8BCF63]/10" />
 
-                <h2 className="relative max-w-[260px] text-lg font-bold leading-6 text-white">
-                  {program.title}
-                </h2>
-
-                <div className="mt-5 space-y-2">
-                  {program.description.map((item) => (
-                    <div
-                      key={item}
-                      className="flex items-start gap-2 text-sm leading-6 text-white/65"
-                    >
-                      <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#8BCF63]" />
-                      <span>{item}</span>
-                    </div>
-                  ))}
-                </div>
-
-                {program.details && (
-                  <div className="mt-4 border-t border-white/[0.06] pt-4">
-                    {program.details.map((item, detailIndex) => (
-                      <div
-                        key={`${item}-${detailIndex}`}
-                        className={`text-xs leading-5 ${
-                          detailIndex === 0
-                            ? "mt-1 font-bold text-[#8BCF63]"
-                            : "text-white/50"
-                        }`}
-                      >
-                        {detailIndex !== 0 && !item.includes("up to") && (
-                          <span className="mr-2 text-[#8BCF63]">•</span>
-                        )}
-                        {item}
-                      </div>
-                    ))}
+                  <div className="relative flex h-24 w-24 items-center justify-center rounded-2xl bg-white p-3 shadow-lg transition-all duration-500 group-hover:scale-105 group-hover:-rotate-2">
+                    <img
+                      src={item.logo}
+                      alt={item.title}
+                      className="max-h-full max-w-full object-contain"
+                    />
                   </div>
-                )}
+                </div>
+
+                {/* Content */}
+                <div className="relative mt-7 flex flex-1 flex-col text-center">
+                  <h2 className="text-base font-bold uppercase leading-6 text-white transition-colors duration-300 group-hover:text-[#8BCF63]">
+                    {item.title}
+                  </h2>
+
+                  <p className="mt-4 text-sm leading-6 text-white/55">
+                    {item.description}
+                  </p>
+
+                  {/* Visit */}
+                  <div className="mt-auto pt-6">
+                    <span className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#8BCF63]">
+                      Visit Website
+                      <span className="transition-transform duration-300 group-hover:translate-x-1">
+                        →
+                      </span>
+                    </span>
+                  </div>
+                </div>
 
                 {/* Bottom accent */}
-                <div className="absolute bottom-0 left-6 right-6 h-px origin-left scale-x-0 bg-gradient-to-r from-[#35B85F] to-transparent transition-transform duration-500 group-hover:scale-x-100" />
-              </article>
+                <div className="absolute bottom-0 left-7 right-7 h-px origin-left scale-x-0 bg-gradient-to-r from-[#35B85F] to-transparent transition-transform duration-500 group-hover:scale-x-100" />
+              </a>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Closing CTA */}
+      {/* CTA */}
       <section className="px-6 pb-24 sm:px-8 lg:px-12 lg:pb-32">
         <div className="mx-auto max-w-7xl">
           <div className="relative overflow-hidden rounded-[2rem] border border-[#8BCF63]/20 bg-gradient-to-br from-[#0B351F] via-[#092417] to-[#071A11] px-8 py-14 text-center sm:px-12 lg:py-20">
-            {/* Decorative glow */}
+            {/* Glow */}
             <div className="pointer-events-none absolute left-1/2 top-0 h-64 w-64 -translate-x-1/2 rounded-full bg-[#35B85F]/10 blur-3xl" />
 
             <div className="relative">
               <span className="text-sm font-semibold uppercase tracking-[0.2em] text-[#8BCF63]">
-                Growing together
+                E-Agro Resources
               </span>
 
               <h2 className="mt-4 text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
-                Building a stronger future
-                <br className="hidden sm:block" /> for our farmers.
+                Everything farmers need,
+                <br className="hidden sm:block" /> connected in one place.
               </h2>
 
               <p className="mx-auto mt-5 max-w-2xl text-sm leading-7 text-white/55 sm:text-base">
-                Explore the different opportunities and services available
-                through the E-Agro program.
+                Explore our programs and discover how E-Agro can help connect
+                farmers with opportunities and agricultural resources.
               </p>
 
               <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
                 <Link
-                  to="/loan"
+                  to="/program"
                   className="group rounded-full bg-[#00A94F] px-7 py-3.5 text-sm font-bold text-white shadow-lg shadow-[#00A94F]/20 transition-all duration-300 hover:-translate-y-1 hover:bg-[#0BBD5D] hover:shadow-[#00A94F]/30"
                 >
-                  Explore Loan Program
+                  Explore Our Program
                   <span className="ml-2 inline-block transition-transform group-hover:translate-x-1">
                     →
                   </span>
@@ -237,27 +215,6 @@ function Program() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="px-6 pb-10 sm:px-8 lg:px-12">
-        <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-5 border-t border-white/[0.06] pt-8 text-center sm:flex-row sm:text-left">
-          <div>
-            <p className="text-sm font-semibold text-white">E-AGRO</p>
-            <p className="mt-1 text-xs text-white/40">
-              Empowering farmers through opportunity and innovation.
-            </p>
-          </div>
-
-          <p className="text-xs text-white/35">
-            ©2026 E-AGRO. All Rights Reserved.
-          </p>
-        </div>
-      </footer>
-
-      {/* Language Button */}
-      <button className="fixed bottom-5 right-5 z-50 rounded-full bg-[#00A94F] px-5 py-3 text-xs font-bold text-white shadow-xl shadow-black/20 transition-all duration-300 hover:-translate-y-1 hover:bg-[#0BBD5D]">
-        TAGALOG
-      </button>
-
       {/* Animations */}
       <style>{`
         @keyframes fade-up {
@@ -265,6 +222,7 @@ function Program() {
             opacity: 0;
             transform: translateY(24px);
           }
+
           to {
             opacity: 1;
             transform: translateY(0);
@@ -287,4 +245,4 @@ function Program() {
   );
 }
 
-export default Program;
+export default GovLinks;
