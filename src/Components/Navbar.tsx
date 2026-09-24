@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 const navOptions = [
@@ -9,6 +10,12 @@ const navOptions = [
 ];
 
 function Navbar() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
+
   return (
     <div className="bg-white text-slate-800">
       <header className="border-b border-white/5 bg-[#061810]">
@@ -16,10 +23,10 @@ function Navbar() {
           {/* Logo */}
           <Link
             to="/"
+            onClick={closeMenu}
             className="flex items-center gap-2 text-lg font-bold text-white"
           >
             <span className="text-[#8BCF63]">
-              {" "}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 aria-hidden="true"
@@ -40,7 +47,7 @@ function Navbar() {
             E-Agro
           </Link>
 
-          {/* Navigation */}
+          {/* Desktop Navigation */}
           <nav className="hidden items-center gap-7 md:flex">
             {navOptions.map((option) => (
               <Link
@@ -53,12 +60,8 @@ function Navbar() {
             ))}
           </nav>
 
-          {/* Actions */}
+          {/* Desktop Actions */}
           <div className="hidden items-center gap-3 sm:flex">
-            {/* <button className="rounded-full border border-white/10 px-4 py-2 text-xs text-white/70 transition hover:border-white/20 hover:text-white">
-              Tagalog
-            </button> */}
-
             <Link
               to="/contact"
               className="rounded-full bg-[#F5B900] px-5 py-2.5 text-xs font-bold text-[#07150D] transition hover:bg-[#FFC928]"
@@ -67,23 +70,74 @@ function Navbar() {
             </Link>
           </div>
 
-          {/* Mobile button */}
-          <button className="text-white md:hidden">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M4 6h16M4 12h16M4 18h16"
-              />
-            </svg>
+          {/* Mobile Menu Button */}
+          <button
+            onClick={() => setMenuOpen(!menuOpen)}
+            className="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 text-white transition hover:border-white/20 hover:bg-white/5 md:hidden"
+            aria-label="Toggle menu"
+            aria-expanded={menuOpen}
+          >
+            {menuOpen ? (
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            ) : (
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            )}
           </button>
+        </div>
+
+        {/* Mobile Navigation */}
+        <div
+          className={`overflow-hidden border-t border-white/5 bg-[#061810] transition-all duration-300 md:hidden ${
+            menuOpen ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
+          }`}
+        >
+          <nav className="mx-auto flex max-w-6xl flex-col px-6 py-4">
+            {navOptions.map((option) => (
+              <Link
+                key={option.label}
+                to={option.path}
+                onClick={closeMenu}
+                className="border-b border-white/5 py-4 text-sm text-white/60 transition hover:text-white"
+              >
+                {option.label}
+              </Link>
+            ))}
+
+            {/* Mobile CTA */}
+            <Link
+              to="/contact"
+              onClick={closeMenu}
+              className="mt-4 mb-2 rounded-full bg-[#F5B900] px-5 py-3 text-center text-sm font-bold text-[#07150D] transition hover:bg-[#FFC928]"
+            >
+              Apply for a loan
+            </Link>
+          </nav>
         </div>
       </header>
     </div>

@@ -429,55 +429,6 @@ function Supplier() {
                   </p>
                 </div>
               </div>
-
-              {/* Floating Card */}
-              <div
-                className="
-                  animate-entrance-up
-                  entrance-delay-700
-                  absolute
-                  -bottom-5
-                  -left-6
-                  rounded-2xl
-                  border
-                  border-white/10
-                  bg-[#10271A]/95
-                  px-5
-                  py-4
-                  shadow-2xl
-                  backdrop-blur-md
-                  transition-all
-                  duration-300
-                  hover:-translate-y-1
-                "
-              >
-                <div className="flex items-center gap-3">
-                  <div
-                    className="
-                      flex
-                      h-9
-                      w-9
-                      items-center
-                      justify-center
-                      rounded-full
-                      bg-[#F5B900]/10
-                      text-[#F5B900]
-                    "
-                  >
-                    ↗
-                  </div>
-
-                  <div>
-                    <p className="text-[10px] uppercase tracking-wider text-white/40">
-                      Grow your reach
-                    </p>
-
-                    <p className="mt-1 text-sm font-semibold text-white">
-                      Connect with farmers
-                    </p>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
 
