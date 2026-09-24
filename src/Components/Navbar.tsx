@@ -5,6 +5,7 @@ const navOptions = [
   { label: "About Us", path: "/about" },
   { label: "Government links", path: "/links" },
   { label: "For Farmers", path: "/farmer" },
+  { label: "For Suppliers", path: "/supplier" },
 ];
 
 function Navbar() {
@@ -17,7 +18,25 @@ function Navbar() {
             to="/"
             className="flex items-center gap-2 text-lg font-bold text-white"
           >
-            <span className="text-[#8BCF63]">✦</span>
+            <span className="text-[#8BCF63]">
+              {" "}
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="none"
+                  stroke="currentColor"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M14 9.536V7a4 4 0 0 1 4-4h1.5a.5.5 0 0 1 .5.5V5a4 4 0 0 1-4 4a4 4 0 0 0-4 4c0 2 0 3 1 5a5 5 0 0 1-1 3M4 9a5 5 0 0 1 8 4a5 5 0 0 1-8-4m1 12h14"
+                />
+              </svg>
+            </span>
             E-Agro
           </Link>
 
