@@ -1,4 +1,4 @@
-# E-Agro 🌱
+<img width="2513" height="2408" alt="image" src="https://github.com/user-attachments/assets/6d8fabc9-36ea-42b1-9409-830dcf4cdffd" /># E-Agro 🌱
 
 A modern agricultural web platform built with **React, TypeScript, Vite, and Tailwind CSS**.
 
@@ -12,6 +12,16 @@ E-Agro provides a user-friendly interface for farmers and agricultural suppliers
 * Tailwind CSS
 * React Router
 * Oxlint
+
+## Screenshots
+
+<img width="2513" height="2408" alt="image" src="https://github.com/user-attachments/assets/6f7793bb-c166-43a1-9b29-893e8e76de69" />
+
+<img width="2513" height="2093" alt="image" src="https://github.com/user-attachments/assets/53a11362-a77a-4957-89fc-dca53b294c8a" />
+
+<img width="2513" height="2370" alt="image" src="https://github.com/user-attachments/assets/cc7d3b88-ef7e-4813-8623-b2d98605693b" />
+
+<img width="2513" height="1917" alt="image" src="https://github.com/user-attachments/assets/294df6ee-1bf9-4cde-b83a-e685f650075c" />
 
 ## Features
 
