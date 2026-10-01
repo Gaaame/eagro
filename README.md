@@ -1,4 +1,4 @@
-<img width="2513" height="2408" alt="image" src="https://github.com/user-attachments/assets/6d8fabc9-36ea-42b1-9409-830dcf4cdffd" /># E-Agro 🌱
+# E-Agro 🌱
 
 A modern agricultural web platform built with **React, TypeScript, Vite, and Tailwind CSS**.
 
