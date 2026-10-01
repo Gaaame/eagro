@@ -1,32 +1,83 @@
-# React + TypeScript + Vite
+# E-Agro 🌱
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A modern agricultural web platform built with **React, TypeScript, Vite, and Tailwind CSS**.
 
-Currently, two official plugins are available:
+E-Agro provides a user-friendly interface for farmers and agricultural suppliers, with dedicated pages for programs, resources, and agricultural services.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Tech Stack
 
-## React Compiler
+* React 19
+* TypeScript
+* Vite
+* Tailwind CSS
+* React Router
+* Oxlint
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Features
 
-## Expanding the Oxlint configuration
+* Responsive design
+* Modern agricultural-themed UI
+* React Router navigation
+* Farmer and supplier sections
+* Agricultural programs and resources
+* About and Contact pages
+* Animated page transitions
+* Responsive mobile navigation
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+## ⚙️ Getting Started
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+### Prerequisites
+
+Make sure you have **Node.js** and **npm** installed.
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/Gaaame/eagro.git
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+### 2. Navigate to the project
+
+```bash
+cd eagro
+```
+
+### 3. Install dependencies
+
+```bash
+npm install
+```
+
+### 4. Start the development server
+
+```bash
+npm run dev
+```
+
+Open the local URL provided by Vite in your browser.
+
+## Production Build
+
+Build the project:
+
+```bash
+npm run build
+```
+
+Preview the production build:
+
+```bash
+npm run preview
+```
+
+## Lint
+
+Run Oxlint:
+
+```bash
+npm run lint
+```
+
+---
+
+Built with **React + TypeScript + Vite**.
